@@ -1,0 +1,44 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.huawei.hms.rn.push"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="17"
+8-->/Users/non/Desktop/projects/apsmartworld4/node_modules/@hmscore/react-native-hms-push/android/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->/Users/non/Desktop/projects/apsmartworld4/node_modules/@hmscore/react-native-hms-push/android/src/main/AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+11-->/Users/non/Desktop/projects/apsmartworld4/node_modules/@hmscore/react-native-hms-push/android/src/main/AndroidManifest.xml:5:5-79
+11-->/Users/non/Desktop/projects/apsmartworld4/node_modules/@hmscore/react-native-hms-push/android/src/main/AndroidManifest.xml:5:22-76
+12
+13    <application>
+13-->/Users/non/Desktop/projects/apsmartworld4/node_modules/@hmscore/react-native-hms-push/android/src/main/AndroidManifest.xml:6:5-19:19
+14        <service android:name="com.huawei.hms.rn.push.services.MessagingHeadlessService" />
+14-->/Users/non/Desktop/projects/apsmartworld4/node_modules/@hmscore/react-native-hms-push/android/src/main/AndroidManifest.xml:7:9-92
+14-->/Users/non/Desktop/projects/apsmartworld4/node_modules/@hmscore/react-native-hms-push/android/src/main/AndroidManifest.xml:7:18-89
+15        <service
+15-->/Users/non/Desktop/projects/apsmartworld4/node_modules/@hmscore/react-native-hms-push/android/src/main/AndroidManifest.xml:8:9-14:19
+16            android:name="com.huawei.hms.rn.push.remote.HmsPushMessageService"
+16-->/Users/non/Desktop/projects/apsmartworld4/node_modules/@hmscore/react-native-hms-push/android/src/main/AndroidManifest.xml:9:13-79
+17            android:exported="false" >
+17-->/Users/non/Desktop/projects/apsmartworld4/node_modules/@hmscore/react-native-hms-push/android/src/main/AndroidManifest.xml:10:13-37
+18            <intent-filter>
+18-->/Users/non/Desktop/projects/apsmartworld4/node_modules/@hmscore/react-native-hms-push/android/src/main/AndroidManifest.xml:11:13-13:29
+19                <action android:name="com.huawei.push.action.MESSAGING_EVENT" />
+19-->/Users/non/Desktop/projects/apsmartworld4/node_modules/@hmscore/react-native-hms-push/android/src/main/AndroidManifest.xml:12:17-81
+19-->/Users/non/Desktop/projects/apsmartworld4/node_modules/@hmscore/react-native-hms-push/android/src/main/AndroidManifest.xml:12:25-78
+20            </intent-filter>
+21        </service>
+22
+23        <meta-data
+23-->/Users/non/Desktop/projects/apsmartworld4/node_modules/@hmscore/react-native-hms-push/android/src/main/AndroidManifest.xml:16:9-18:36
+24            android:name="push_kit_auto_init_enabled"
+24-->/Users/non/Desktop/projects/apsmartworld4/node_modules/@hmscore/react-native-hms-push/android/src/main/AndroidManifest.xml:17:13-54
+25            android:value="true" />
+25-->/Users/non/Desktop/projects/apsmartworld4/node_modules/@hmscore/react-native-hms-push/android/src/main/AndroidManifest.xml:18:13-33
+26    </application>
+27
+28</manifest>
