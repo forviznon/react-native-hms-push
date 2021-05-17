@@ -141,15 +141,15 @@ AppRegistry.registerHeadlessTask("HMSPushHeadlessTask", () => {
   }
   return (remoteMessage) => backgroundMessageHandler(remoteMessage);
 });
-// if (Platform.OS === 'android') {
-//   HmsPushMessaging.setBackgroundMessageHandler = (handler) => {
-//     if (handler && typeof handler !== "function") {
-//       console.error("backgroundMessageHandler must be a function.");
-//     }
-//     backgroundMessageHandler = handler;
-//     console.log("backgroundMessageHandler registered ✔");
-//   };
-// }
+if (Platform.OS === 'android') {
+  HmsPushMessaging.setBackgroundMessageHandler = (handler) => {
+    if (handler && typeof handler !== "function") {
+      console.error("backgroundMessageHandler must be a function.");
+    }
+    backgroundMessageHandler = handler;
+    console.log("backgroundMessageHandler registered ✔");
+  };
+}
 
 export { RNRemoteMessage } from "./src/RNRemoteMessage";
 export { HmsPushResultCode } from "./src/HmsPushResultCode";
